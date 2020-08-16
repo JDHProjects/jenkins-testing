@@ -5,12 +5,12 @@ pipeline {
             steps {
                 sh 'sudo apt update'
                 sh 'sudo apt install python3.8'
-                sh 'python --version'
+                sh 'python3 --version'
             }
         }
         stage('run hello.py') { 
             steps {
-                sh 'python hello.py'
+                sh 'python3 hello.py'
             }
         }
     }
