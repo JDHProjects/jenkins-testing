@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('install python') { 
             steps {
-                sh 'sudo -A apt update'
-                sh 'sudo apt install python3.8'
+                sh 'apt update'
+                sh 'apt install python3.8'
                 sh 'python --version'
             }
         }
