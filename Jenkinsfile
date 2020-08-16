@@ -13,7 +13,5 @@ pipeline {
                 sh 'python hello.py'
             }
         }
-
-        }
     }
 }
