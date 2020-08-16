@@ -1,5 +1,5 @@
 pipeline {
-    agent any 
+    agent {node {label 'ubuntu-server-20.04.1'}}
     stages {
         stage('install python') { 
             steps {
